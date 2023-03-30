@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+char** findWords(char** words, int wordsSize, int* returnSize)
+{
+    int map[26] = { 2,3,3,2,1,2,2,2,1,2,2,2,3,3,1,1,1,1,2,1,1,3,1,3,1,3 };
+    char** res = (char**)malloc(0);
+    *returnSize = 0;
+    for (int i = 0; i < wordsSize; i++)
+    {
+        int j = 0;
+        int temp = 0;
+        for (; j < strlen(words[i]); j++)
+        {
+            int key = 0;
+            if (isupper(words[i][j]))
+            {
+                key = map[words[i][j] - 'A'];
+                if (j == 0)
+                    temp = key;
+            }
+            else
+            {
+                key = map[words[i][j] - 'a'];
+                if (j == 0)
+                    temp = key;
+            }
+            if (temp != key)break;
+        }
+        if (j == strlen(words[i]))
+        {
+            (*returnSize)++;
+            res = (char**)realloc(res, (*returnSize) * sizeof(char*));
+            res[(*returnSize) - 1] = words[i];
+        }
+    }
+    return res;
+}

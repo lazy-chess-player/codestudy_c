@@ -1,0 +1,4 @@
+﻿  源.c
+D:\代码\C\text_1031_3\源.c(10,40): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+D:\代码\C\text_1031_3\源.c(6,35): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  text_1031_3.vcxproj -> D:\代码\C\text_1031_3\x64\Debug\text_1031_3.exe

@@ -1,0 +1,5 @@
+﻿  源.c
+D:\代码\C\text_1101_1\源.c(6,16): warning C4013: “strlen”未定义；假设外部返回 int
+D:\代码\C\text_1101_1\源.c(7,24): warning C4013: “malloc”未定义；假设外部返回 int
+D:\代码\C\text_1101_1\源.c(7,53): warning C4312: “类型强制转换”: 从“int”转换到更大的“char *”
+  text_1101_1.vcxproj -> D:\代码\C\text_1101_1\x64\Debug\text_1101_1.exe

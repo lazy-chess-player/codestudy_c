@@ -1,0 +1,4 @@
+﻿  源.c
+D:\代码\C\text_1110_1\源.c(6,17): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\代码\C\text_1110_1\源.c(7,17): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  text_1110_1.vcxproj -> D:\代码\C\text_1110_1\x64\Debug\text_1110_1.exe

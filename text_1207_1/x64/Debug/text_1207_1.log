@@ -1,0 +1,4 @@
+﻿  源.c
+D:\代码\C\text_1207_1\源.c(75,15): warning C4013: “hcf”未定义；假设外部返回 int
+D:\代码\C\text_1207_1\源.c(80,9): warning C4101: “r”: 未引用的局部变量
+  text_1207_1.vcxproj -> D:\代码\C\text_1207_1\x64\Debug\text_1207_1.exe

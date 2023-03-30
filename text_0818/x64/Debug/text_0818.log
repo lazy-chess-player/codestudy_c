@@ -1,0 +1,3 @@
+﻿  源.c
+D:\代码\C\text_0818\源.c(27,15): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+  text_0818.vcxproj -> D:\代码\C\text_0818\x64\Debug\text_0818.exe

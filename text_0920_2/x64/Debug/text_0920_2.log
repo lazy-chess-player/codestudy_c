@@ -1,0 +1,3 @@
+﻿  0920_2.c
+D:\代码\C\text_0920_2\0920_2.c(30,18): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  text_0920_2.vcxproj -> D:\代码\C\text_0920_2\x64\Debug\text_0920_2.exe

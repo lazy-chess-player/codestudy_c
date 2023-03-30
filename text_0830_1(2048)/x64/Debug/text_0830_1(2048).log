@@ -1,0 +1,6 @@
+﻿  game.c
+  text.c
+D:\代码\C\text_0830_1(2048)\text.c(6,2): warning C4013: “game_2048”未定义；假设外部返回 int
+  正在生成代码...
+D:\代码\C\text_0830_1(2048)\game.c(58): warning C4715: “start_comand”: 不是所有的控件路径都返回值
+  text_0830_1(2048).vcxproj -> D:\代码\C\text_0830_1(2048)\x64\Debug\text_0830_1(2048).exe

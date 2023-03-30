@@ -1,0 +1,8 @@
+﻿  源.c
+D:\代码\C\text_1109_2\源.c(9,51): warning C4090: “函数”: 不同的“const”限定符
+D:\代码\C\text_1109_2\源.c(9,51): warning C4113: “int (__cdecl *)(int *,int *)”和“_CoreCrtNonSecureSearchSortCompareFunction”的参数列表不同
+D:\代码\C\text_1109_2\源.c(10,51): warning C4090: “函数”: 不同的“const”限定符
+D:\代码\C\text_1109_2\源.c(10,51): warning C4113: “int (__cdecl *)(int *,int *)”和“_CoreCrtNonSecureSearchSortCompareFunction”的参数列表不同
+D:\代码\C\text_1109_2\源.c(29,51): warning C4090: “函数”: 不同的“const”限定符
+D:\代码\C\text_1109_2\源.c(29,51): warning C4113: “int (__cdecl *)(int *,int *)”和“_CoreCrtNonSecureSearchSortCompareFunction”的参数列表不同
+  text_1109_2.vcxproj -> D:\代码\C\text_1109_2\x64\Debug\text_1109_2.exe

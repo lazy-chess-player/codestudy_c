@@ -1,0 +1,7 @@
+﻿  game.c
+D:\代码\C\text_0901_1(2048第二版)\game.c(192,1): warning C4029: 声明的形参表不同于定义
+D:\代码\C\text_0901_1(2048第二版)\game.c(222,1): warning C4029: 声明的形参表不同于定义
+D:\代码\C\text_0901_1(2048第二版)\game.c(252,1): warning C4029: 声明的形参表不同于定义
+D:\代码\C\text_0901_1(2048第二版)\game.c(282,1): warning C4029: 声明的形参表不同于定义
+D:\代码\C\text_0901_1(2048第二版)\game.c(67): warning C4715: “start_comand”: 不是所有的控件路径都返回值
+  text_0901_1(2048第二版).vcxproj -> D:\代码\C\text_0901_1(2048第二版)\x64\Debug\text_0901_1(2048第二版).exe

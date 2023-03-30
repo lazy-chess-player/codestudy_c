@@ -1,0 +1,9 @@
+﻿  源.c
+D:\代码\C\text_0912_2\源.c(54,28): warning C4305: “初始化”: 从“int”到“char”截断
+D:\代码\C\text_0912_2\源.c(54,34): warning C4305: “初始化”: 从“int”到“char”截断
+D:\代码\C\text_0912_2\源.c(54,40): warning C4305: “初始化”: 从“int”到“char”截断
+D:\代码\C\text_0912_2\源.c(54,46): warning C4305: “初始化”: 从“int”到“char”截断
+D:\代码\C\text_0912_2\源.c(54,52): warning C4305: “初始化”: 从“int”到“char”截断
+D:\代码\C\text_0912_2\源.c(54,58): warning C4305: “初始化”: 从“int”到“char”截断
+D:\代码\C\text_0912_2\源.c(54,64): warning C4305: “初始化”: 从“int”到“char”截断
+  text_0912_2.vcxproj -> D:\代码\C\text_0912_2\x64\Debug\text_0912_2.exe

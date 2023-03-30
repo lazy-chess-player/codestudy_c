@@ -1,0 +1,3 @@
+﻿  源.c
+D:\代码\C\text_0929_1\源.c(14): warning C4715: “singleNumber”: 不是所有的控件路径都返回值
+  text_0929_1.vcxproj -> D:\代码\C\text_0929_1\x64\Debug\text_0929_1.exe

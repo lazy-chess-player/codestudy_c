@@ -1,0 +1,7 @@
+﻿  0921_1.c
+D:\代码\C\text_0921\0921_1.c(46,25): warning C4047: “函数”:“const char *”与“char [3][10]”的间接级别不同
+D:\代码\C\text_0921\0921_1.c(46,22): warning C4024: “strlen”: 形参和实参 1 的类型不同
+D:\代码\C\text_0921\0921_1.c(47,25): warning C4047: “函数”:“char **”与“char [3][10]”的间接级别不同
+D:\代码\C\text_0921\0921_1.c(47,22): warning C4024: “longestCommonPrefix”: 形参和实参 1 的类型不同
+D:\代码\C\text_0921\0921_1.c(46,15): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  text_0921.vcxproj -> D:\代码\C\text_0921\x64\Debug\text_0921.exe

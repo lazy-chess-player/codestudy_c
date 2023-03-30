@@ -1,0 +1,6 @@
+﻿  源.c
+D:\代码\C\text_1202_2\源.c(9,19): warning C4013: “abs”未定义；假设外部返回 int
+D:\代码\C\text_1202_2\源.c(26,35): warning C4047: “函数”:“int **”与“int [5][2]”的间接级别不同
+D:\代码\C\text_1202_2\源.c(26,29): warning C4024: “nearestValidPoint”: 形参和实参 3 的类型不同
+D:\代码\C\text_1202_2\源.c(25,1): warning C4047: “初始化”:“int *”与“int (*)[5][2]”的间接级别不同
+  text_1202_2.vcxproj -> D:\代码\C\text_1202_2\x64\Debug\text_1202_2.exe

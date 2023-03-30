@@ -1,0 +1,6 @@
+﻿  源.c
+D:\代码\C\text_1124_4\源.c(13,44): warning C4090: “函数”: 不同的“const”限定符
+D:\代码\C\text_1124_4\源.c(13,44): warning C4113: “int (__cdecl *)(int *,int *)”和“_CoreCrtNonSecureSearchSortCompareFunction”的参数列表不同
+D:\代码\C\text_1124_4\源.c(31,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+D:\代码\C\text_1124_4\源.c(31,9): warning C4313: "printf": 格式字符串中的 "%d" 与类型为 "int *" 的参数 1 冲突
+  text_1124_4.vcxproj -> D:\代码\C\text_1124_4\x64\Debug\text_1124_4.exe

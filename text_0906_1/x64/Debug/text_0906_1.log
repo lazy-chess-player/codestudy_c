@@ -1,0 +1,4 @@
+﻿  源.c
+D:\代码\C\text_0906_1\源.c(5,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\代码\C\text_0906_1\源.c(45,1): warning C4047: “初始化”:“char”与“char [5]”的间接级别不同
+  text_0906_1.vcxproj -> D:\代码\C\text_0906_1\x64\Debug\text_0906_1.exe

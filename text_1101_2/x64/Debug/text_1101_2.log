@@ -1,0 +1,4 @@
+﻿  源.c
+D:\代码\C\text_1101_2\源.c(23,24): warning C4013: “malloc”未定义；假设外部返回 int
+D:\代码\C\text_1101_2\源.c(23,60): warning C4312: “类型强制转换”: 从“int”转换到更大的“int *”
+  text_1101_2.vcxproj -> D:\代码\C\text_1101_2\x64\Debug\text_1101_2.exe

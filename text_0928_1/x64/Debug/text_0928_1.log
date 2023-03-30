@@ -1,0 +1,8 @@
+﻿  源.c
+D:\代码\C\text_0928_1\源.c(12,37): warning C4244: “函数”: 从“size_t”转换到“double”，可能丢失数据
+D:\代码\C\text_0928_1\源.c(12,11): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+D:\代码\C\text_0928_1\源.c(14,21): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\代码\C\text_0928_1\源.c(18,37): warning C4244: “函数”: 从“size_t”转换到“double”，可能丢失数据
+D:\代码\C\text_0928_1\源.c(18,11): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+D:\代码\C\text_0928_1\源.c(7,25): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  text_0928_1.vcxproj -> D:\代码\C\text_0928_1\x64\Debug\text_0928_1.exe
