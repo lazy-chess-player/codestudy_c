@@ -1,4 +1,0 @@
-﻿  源.c
-D:\代码\C\study_1116_1\源.c(93,66): warning C4090: “函数”: 不同的“const”限定符
-D:\代码\C\study_1116_1\源.c(93,66): warning C4113: “int (__cdecl *)(int *,int *)”和“_CoreCrtNonSecureSearchSortCompareFunction”的参数列表不同
-  study_1116_1.vcxproj -> D:\代码\C\study_1116_1\x64\Debug\study_1116_1.exe
