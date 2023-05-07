@@ -1,8 +1,1 @@
-﻿  game.c
-  text.c
-  正在生成代码
-  Previous IPDB not found, fall back to full compilation.
-D:\代码\C\text_0826_1(2048)\game.c(77): warning C4715: “start_comand”: 不是所有的控件路径都返回值
-  All 17 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  已完成代码的生成
-  text_0826_1(2048).vcxproj -> D:\代码\C\text_0826_1(2048)\x64\Release\text_0826_1( 井字棋).exe
+﻿  text_0826_1(2048).vcxproj -> D:\Code\code-study_-c\text_0826_1(2048)\x64\Release\text_0826_1( 井字棋).exe
