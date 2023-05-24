@@ -11,7 +11,6 @@ void game()
 	int input = start_comand();
 	if (input == 1)
 	{
-		display_board(mine, ROW, COL);
 		display_board(show, ROW, COL);
 		search_mine(mine,show);
 	}
