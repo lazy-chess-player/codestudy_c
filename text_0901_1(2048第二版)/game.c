@@ -218,6 +218,8 @@ void move_left(int board[ROW][COL])
 		}
 	}
 }
+
+
 void move_right(int board[ROW][COL])
 {
 	for (int i = 0; i < 4; i++)
@@ -248,6 +250,7 @@ void move_right(int board[ROW][COL])
 		}
 	}
 }
+
 void move_up(int board[ROW][COL])
 {
 	for (int i = 0; i < 4; i++)
