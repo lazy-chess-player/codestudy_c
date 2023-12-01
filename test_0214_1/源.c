@@ -1,15 +1,16 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
-#include<math.h>
-#include<string.h>
-struct bank {
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <math.h>
+#include <string.h>
+struct bank
+{
 	char id[8];
 	double money;
 	char name[20];
 	char sf[20];
 	char day[20];
-}o[2000], n;
+} o[2000], n;
 int u;
 int v = 0;
 void yewu();
@@ -23,20 +24,29 @@ void menu()
 	scanf_s("%d", &a);
 	switch (a)
 	{
-	case 1:est(); break;
-	case 2:enter();
+	case 1:
+		est();
 		break;
-	case 3:zhuxiao(); break;
-	case 4:tongji(); break;
-	case 5:printf("Ð»Ð»Ê¹ÓÃ\n"); break;
+	case 2:
+		enter();
+		break;
+	case 3:
+		zhuxiao();
+		break;
+	case 4:
+		tongji();
+		break;
+	case 5:
+		printf("Ð»Ð»Ê¹ï¿½ï¿½\n");
+		break;
 	}
 }
 int read()
 {
 	int i;
 	int n = 0;
-	FILE* fp;
-	fp = fopen("ÕË»§.txt", "rb");
+	FILE *fp;
+	fp = fopen("ï¿½Ë»ï¿½.txt", "rb");
 	if (fp == NULL)
 	{
 		exit(0);
@@ -56,15 +66,15 @@ void meun_1()
 {
 
 	printf("=================================BANK OF CONTEC=================================\n");
-	printf("                                 1. ×¢²áÕË»§\n");
+	printf("                                 1. ×¢ï¿½ï¿½ï¿½Ë»ï¿½\n");
 	printf("\n");
-	printf("                                 2. ÒÑÓÐÕÊ»§µÇÂ¼\n");
+	printf("                                 2. ï¿½ï¿½ï¿½ï¿½ï¿½Ê»ï¿½ï¿½ï¿½Â¼\n");
 	printf("\n");
-	printf("                                 3. ×¢Ïú\n");
+	printf("                                 3. ×¢ï¿½ï¿½\n");
 	printf("\n");
-	printf("                                 4. Í³¼Æ\n");
+	printf("                                 4. Í³ï¿½ï¿½\n");
 	printf("\n");
-	printf("                                 5. ÍË³ö\n");
+	printf("                                 5. ï¿½Ë³ï¿½\n");
 	printf("\n");
 	printf("=================================================================================\n");
 	printf("\n");
@@ -72,80 +82,85 @@ void meun_1()
 void mune_2()
 {
 	printf("=================================BANK OF CONTEC=================================\n");
-	printf("                                 1. ´æÇ®\n");
+	printf("                                 1. ï¿½ï¿½Ç®\n");
 	printf("\n");
 	printf("                                 2. È¡Ç®\n");
 	printf("\n");
-	printf("                                 3. ²éÑ¯\n");
+	printf("                                 3. ï¿½ï¿½Ñ¯\n");
 	printf("\n");
-	printf("                                 4. ·µ»Ø²Ëµ¥\n");
+	printf("                                 4. ï¿½ï¿½ï¿½Ø²Ëµï¿½\n");
 	printf("\n");
-	printf("                                 5. ÍË³ö\n");
+	printf("                                 5. ï¿½Ë³ï¿½\n");
 	printf("\n");
 	printf("=================================================================================\n");
 	printf("\n");
 }
-void est()//×¢²áÐÂÕË»§
+void est() // ×¢ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½
 {
-	printf("×¢²á\n");
-	struct bank* p; struct bank old[2000];
+	printf("×¢ï¿½ï¿½\n");
+	struct bank *p;
+	struct bank old[2000];
 	p = &n;
-	printf("ÇëÊäÈëÄúµÄid(ÆßÎ»)\n");
+	printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½id(ï¿½ï¿½Î»)\n");
 	getchar();
 	gets_s(n.id);
-	printf("ÊäÈëÄúµÄÉí·ÝÖ¤ºÅÂë£º\n");
+	printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ë£º\n");
 	getchar();
 	gets_s(n.sf);
-	printf("ÇëÊäÈëÄúµÄÃû×Ö:\n");
+	printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:\n");
 	gets_s(n.name);
-	printf("ÇëÊäÈëÈÕÆÚ\n");
+	printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\n");
 	gets_s(n.day);
-	printf("×¢²á³É¹¦£¡\n");
-	for (;;)//¿ª»§´æ¿î
+	printf("×¢ï¿½ï¿½É¹ï¿½ï¿½ï¿½\n");
+	for (;;) // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	{
-		printf("ÊäÈë´æÈë½ð¶î£¨ÐÂÓÃ»§×îÉÙ´æÈë100£©\n");
+		printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î£¨ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½Ù´ï¿½ï¿½ï¿½100ï¿½ï¿½\n");
 		scanf_s("%lf", &n.money);
 		if (n.money < 100)
 		{
-			printf("´æÈë½ð¶îÐ¡ÓÚ100£¬ÇëÖØÐÂ");
+			printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		}
 		else
 		{
-			printf("¿ª»§³É¹¦£¡\n"); break;
+			printf("ï¿½ï¿½ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½\n");
+			break;
 		}
 	}
-	FILE* fx;                              //
-	fx = fopen("ÕË»§.txt", "a");           //
-	if (fx == NULL)                           //
-	{                                       //    ±£´æ´æÓÃ»§ÐÅÏ¢
-		exit(0);                            //
-	}                                       //
+	FILE *fx;								//
+	fx = fopen("ï¿½Ë»ï¿½.txt", "a");				//
+	if (fx == NULL)							//
+	{										//    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½Ï¢
+		exit(0);							//
+	}										//
 	fwrite(&n, sizeof(struct bank), 1, fx); //
-	fclose(fx);                             // 
-
+	fclose(fx);								//
 }
-int enter()//µÇÈëÒÑÓÐµÄÕË»§
+int enter() // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½Ë»ï¿½
 {
 	char id[8];
 	char b[20];
 	int c, d;
 	read();
-	int n = 0; int m = 0;
+	int n = 0;
+	int m = 0;
 	for (; n == 0;)
 	{
 		getchar();
-		printf("ÇëÊäÈëÄúµÄid£º\n");
+		printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½idï¿½ï¿½\n");
 		gets_s(id);
 		for (u = 0; u < 2000; u++)
 		{
 			if (strcmp(id, o[u].id) == 0)
 			{
-				n = 1; m = 1; break;
+				n = 1;
+				m = 1;
+				break;
 			}
 			if (u == 1999)
 			{
-				printf("Î´²éÑ¯µ½¸ÃÕË»§\n");
-				printf("ÖØÐÂµÇÈëÇë°´1£¬×¢²áÇë°´2\n"); scanf("%d", &d);
+				printf("Î´ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½\n");
+				printf("ï¿½ï¿½ï¿½Âµï¿½ï¿½ï¿½ï¿½ë°´1ï¿½ï¿½×¢ï¿½ï¿½ï¿½ë°´2\n");
+				scanf("%d", &d);
 				if (d == 2)
 				{
 					return 1;
@@ -153,16 +168,17 @@ int enter()//µÇÈëÒÑÓÐµÄÕË»§
 			}
 		}
 	}
-	printf("µÇÈë³É¹¦\n");
+	printf("ï¿½ï¿½ï¿½ï¿½É¹ï¿½\n");
 	yewu();
 	return 0;
 }
-void zhuxiao()//×¢Ïú
+void zhuxiao() // ×¢ï¿½ï¿½
 {
 	int i;
-	struct bank z[2000]; int n = 0;
+	struct bank z[2000];
+	int n = 0;
 	char id[20];
-	printf("ÇëÊäÈëÄúÒª×¢ÏúÕË»§µÄid\n");
+	printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òª×¢ï¿½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½id\n");
 	getchar();
 	gets_s(id, sizeof(id));
 	read();
@@ -172,11 +188,11 @@ void zhuxiao()//×¢Ïú
 			break;
 		if (i == 1999)
 		{
-			printf("Î´²éÑ¯µ½¸ÃÕË»§\n");
+			printf("Î´ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½\n");
 		}
 	}
-	FILE* p;
-	p = fopen("ÕË»§.txt", "w+");
+	FILE *p;
+	p = fopen("ï¿½Ë»ï¿½.txt", "w+");
 	for (i; i < 2000; i++)
 	{
 		o[i] = o[i + 1];
@@ -187,19 +203,20 @@ void zhuxiao()//×¢Ïú
 	}
 	fclose(p);
 }
-void tongji()//Í³¼Æ
+void tongji() // Í³ï¿½ï¿½
 {
 	read();
-	printf("¹²ÓÐ%d»§\n", read() - 1980);
-	meun_1(); menu();
+	printf("ï¿½ï¿½ï¿½ï¿½%dï¿½ï¿½\n", read() - 1980);
+	meun_1();
+	menu();
 }
-void cun(int g)//´æÇ®ÒµÎñ
+void cun(int g) // ï¿½ï¿½Ç®Òµï¿½ï¿½
 {
 	double m;
-	printf("ÇëÊäÈë´æÈë½ð¶î£º\n");
+	printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î£º\n");
 	scanf_s("%lf", &m);
-	FILE* p;
-	p = fopen("ÕË»§.txt", "w+");
+	FILE *p;
+	p = fopen("ï¿½Ë»ï¿½.txt", "w+");
 	if (p == NULL)
 		exit(0);
 	for (int i = 0; i < 200; i++)
@@ -207,7 +224,7 @@ void cun(int g)//´æÇ®ÒµÎñ
 		fread(&o[i], sizeof(struct bank), 1, p);
 	}
 	o[u].money += m;
-	printf("Äúµ±Ç°Óà¶îÎª%lf\n", o[u].money);
+	printf("ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Îª%lf\n", o[u].money);
 	for (int j = 0; j < 200; j++)
 	{
 		fwrite(&o[j], sizeof(struct bank), 1, p);
@@ -217,12 +234,12 @@ void cun(int g)//´æÇ®ÒµÎñ
 }
 void qu()
 {
-	printf("Äúµ±Ç°Óà¶îÎª%lf", o[u].money);
+	printf("ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Îª%lf", o[u].money);
 	double m;
-	printf("ÇëÊäÈëÈ¡³ö½ð¶î£º\n");
+	printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½î£º\n");
 	scanf_s("%lf", &m);
-	FILE* p;
-	p = fopen("ÕË»§.txt", "w+");
+	FILE *p;
+	p = fopen("ï¿½Ë»ï¿½.txt", "w+");
 	if (p == NULL)
 		exit(0);
 	for (int i = 0; i < 200; i++)
@@ -230,7 +247,7 @@ void qu()
 		fread(&o[i], sizeof(struct bank), 1, p);
 	}
 	o[u].money -= m;
-	printf("Äúµ±Ç°Óà¶îÎª%lf", o[u].money);
+	printf("ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Îª%lf", o[u].money);
 	for (int j = 0; j < 200; j++)
 	{
 		fwrite(&o[j], sizeof(struct bank), 1, p);
@@ -238,12 +255,12 @@ void qu()
 	fclose(p);
 	yewu();
 }
-void chaxun(int x)//²éÑ¯ÒµÎñ
+void chaxun(int x) // ï¿½ï¿½Ñ¯Òµï¿½ï¿½
 {
 	read();
-	printf("ÄúµÄÕË»§Ãû:%s\n", o[u].name);
-	printf("ÄúÕË»§Óà¶î:%lf\n", o[u].money);
-	printf("×¢²áÈÕÆÚÎª:%s\n", o[u].day);
+	printf("ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½:%s\n", o[u].name);
+	printf("ï¿½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½:%lf\n", o[u].money);
+	printf("×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª:%s\n", o[u].day);
 	yewu();
 }
 void yewu()
@@ -253,16 +270,26 @@ void yewu()
 	scanf("%d", &a);
 	switch (a)
 	{
-	case 1:cun(u); break;
-	case 2:qu(); break;
-	case 3:chaxun(u); break;
-	case 4: meun_1(); menu();
-	case 5:printf("Ð»Ð»Ê¹ÓÃ\n"); exit(0);
+	case 1:
+		cun(u);
+		break;
+	case 2:
+		qu();
+		break;
+	case 3:
+		chaxun(u);
+		break;
+	case 4:
+		meun_1();
+		menu();
+	case 5:
+		printf("Ð»Ð»Ê¹ï¿½ï¿½\n");
+		exit(0);
 	}
 }
 int main()
 {
 	meun_1();
 	menu();
-	return(0);
+	return (0);
 }
